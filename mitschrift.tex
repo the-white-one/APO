@@ -1,12 +1,31 @@
-\documentclass[11pt]{article}
+\documentclass[11pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage[a4paper, left=2cm, right=5cm, top=2cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{acro}
+
+
+\acsetup{
+	make-links = true,
+	index = false,
+}
+%Acronyme definieren
+\DeclareAcronym{PSM}{
+	short = PSM,
+	long = Pflanzenschutzmittel
+}
 
 \title{Mitschrift APO WiSe 21/22}
+\subtitle{Eine grauenhafte und unverständliche Mitschrift}
 \author{Tibor Weiß}
 \begin{document}
 \maketitle
+\newpage
+\tableofcontents
+\newpage
+\printacronyms
+\newpage
 \section{Einfürhung in die Agrarpolitik}
 
 \subsection{Grunddaten zur deutschen Land\-wirt\-schaft und Wert\-schöpf\-ung}
@@ -15,9 +34,19 @@
 
 \subsection{Landwirtschaftliche Strukturwandel und Determinanten}
 
-\subsubsection{Was ist strukturwandel?}
+Was zeichnet den aktuellen Strukturwandel in der Landwitschaft aus und warum findet dieser statt.
+Ist dies als Vor- oder Nachteil zu werten?
+
+\subsubsection{Was ist der Strukturwandel?}
 \begin{itemize}
-	\item{Änderung von Daten im Sektor, zB Betriebsgröße, Strukturen, Produktivitäten\ldots}
+	\item{Änderung von Daten im Sektor}
+	\begin{itemize}
+		\item Betriebsgröße
+		
+		\item Betriebsstrukturen
+
+		\item Produktivität der Faktoren (Arbeit, Kapital, Boden)
+	\end{itemize}
 	\item{Bewertung von Strukturwandel (VW-Sicht)}
 
 		Generell ist Strukturwandel erwünscht, da so eine produktivere Wirtschaft ermöglicht wird. Dies führt dazu, dass \glqq schwache\grqq{}  Betriebe ausscheiden, da diese nicht in der Lage sind, ein nachhaltiges Einkommen zu erzielen.
@@ -35,23 +64,26 @@ Druck auf die Produzenten
 \begin{itemize}
 	\item{Spezialisierung und Skaleneffekte}
 
-		Skaleneffekte nutzen, durchschnittliche Stückkosten senken (Spezialisierung bzw Vergrößerung der Betriebe)
+		Skaleneffekte nutzen, durchschnittliche Stückkosten senken (Spezialisierung bzw. Vergrößerung der Betriebe) und dadurch einen wirtschaftlichen Vorteil ggü anderen Betrieben erhalten.
 	\item{technischer Fortschritt (auch biologisch, chemisch und organisatorischer)}
 
-		Möglichkeit der Produkivitätssteigerung durch Mechanisierung (weniger Handarbeit und schnellere Arbeitserledigung)
-		Dadurch erhöhen sich die Produktionsmengen und die Preise fallen. Durch eine gesteigerte Nachfrage, kann der Effekt der fallenden Preise ausgeglichen werden, bzw verringert werden.
-		In der Landwirtschaftlichen Primärproduktion ist eine Steigerung der Nachfrage eher gering.
+		Möglichkeit der Produkivitätssteigerung durch Mechanisierung, Verbesserung der Sorten (Zucht), wirksame \ac{PSM} oder bessere Organisierung der Arbeitsabläufe (genauere Wettervorhersagen, vereinfachte Kommunikation).
+		Dadurch erhöhen sich die Produktionsmengen und die Preise fallen (Marktdiagramm).
+		Durch eine gesteigerte Nachfrage, kann der Effekt der fallenden Preise ausgeglichen werden, bzw verringert werden.
+		In der landwirtschaftlichen Primärproduktion ist eine lokale Steigerung der Nachfrage häufig nur über Bevölkerungswachstum zu realisieren.
 	\item{Außerlandwirtschaftliche Beschäftigungsmöglichkeiten}
 
-		Abwanderung von Arbeitskräften, Notwendigkeit der Produktivitätssteigerung
+		Abwanderung von Arbeitskräften, Notwendigkeit der Produktivitätssteigerung des Produktionsfaktors Mensch.
 	\item{ungesicherte Hofnachfolge}
 
-		Familienbetriebe werden bei fehlendem nachfolger aufgegegben. Bei nicht inhaber geführten Betrieben (Genossenschaften, AGs\ldots) wird ein neuer Verwalter oä eingestellt
+		Familienbetriebe geben bei fehlendem Nachfolger in der Regel auf. Bei nicht vom Inhaber geführten Betrieben (Genossenschaften, AGs\ldots) wird ein neuer Verwalter, Betriebsleiter, Geschäftsführer\ldots eingestellt.
 	\item{internationaler Wettbewerb}
 
-		Produkte werden auf dem Weltmarkt gehandelt und beeinflussen daher die lokalen Preise - generell Preise eher nach unten
+		Produkte werden auf dem Weltmarkt gehandelt und beeinflussen daher die lokalen Preise.
+		In den meisten Fällen ist in einer Region die Produktion günstiger, sodass der Weltmarktpreis unter dem lokalen Preisgleichgewicht liegt.
+		Sollte der Weltmarktpreis den lokalen Preis (deutlich) anheben, werden sich die Produktionsfaktoren verteuern (idR das knappste, derzeit Boden), da selbst mit einem höherem Faktorpreis ein Gewinn erzielt werden kann. 
 
-		Aktuell (Herbst 2021) liegen die Weltmarktpreis deutlich höher.
+		Aktuell (Herbst 2021) liegen die Weltmarktpreise für Getriede deutlich höher als die Produktionskosten.
 		Wenn der Binnenmarkt am Welthandel teilnimmt, wird der Preis des Welthandels diktiert.
 		Es entsteht eine Konsumentenrente (idR) oder Produzentenrente (aktuell) und führt zu Importen bzw. Exporten.
 
@@ -59,10 +91,9 @@ Druck auf die Produzenten
 
 	\item{Gesellschaftliche Anforderungen}
 
-		82 Millionen Agrar-Experten in DE
+		82 Millionen Agrar-Experten in DE, welche unter dem Dunning-Krüger Effekt leiden.
 	\item{kritische öff. Diskussion über die Landwirtschaft}
 \end{itemize}
-
 
 
 \end{document}
