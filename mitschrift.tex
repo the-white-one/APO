@@ -1,19 +1,28 @@
 \documentclass[11pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage[a4paper, left=2cm, right=5cm, top=2cm]{geometry}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{acro}
+\usepackage{todonotes}
+\usepackage{longtable}
+\usepackage{tabu}
 
 
 \acsetup{
-	make-links = true,
-	index = false,
+	make-links ,
+	index/use,
+	trailing/activate = {dash}
 }
 %Acronyme definieren
 \DeclareAcronym{PSM}{
 	short = PSM,
 	long = Pflanzenschutzmittel
+}
+
+\DeclareAcronym{VW}{
+	short = VW,
+	long = Volkswirtschaft,
 }
 
 \title{Mitschrift APO WiSe 21/22}
@@ -24,12 +33,16 @@
 \newpage
 \tableofcontents
 \newpage
-\printacronyms
+\printacronyms[
+	heading = section*,
+	name = Abkürzungsverzeichnis,
+	template = longtabu
+]
 \newpage
 \section{Einfürhung in die Agrarpolitik}
 
 \subsection{Grunddaten zur deutschen Land\-wirt\-schaft und Wert\-schöpf\-ung}
-%todo Mitschrift kommt noch, mit nächstem Punkt in der VL angefangen.
+\todo{Mitschrift kommt noch, mit nächstem Punkt in der VL angefangen}
 
 
 \subsection{Landwirtschaftliche Strukturwandel und Determinanten}
@@ -47,7 +60,7 @@ Ist dies als Vor- oder Nachteil zu werten?
 
 		\item Produktivität der Faktoren (Arbeit, Kapital, Boden)
 	\end{itemize}
-	\item{Bewertung von Strukturwandel (VW-Sicht)}
+	\item{Bewertung von Strukturwandel (\ac{VW}-Sicht)}
 
 		Generell ist Strukturwandel erwünscht, da so eine produktivere Wirtschaft ermöglicht wird. Dies führt dazu, dass \glqq schwache\grqq{}  Betriebe ausscheiden, da diese nicht in der Lage sind, ein nachhaltiges Einkommen zu erzielen.
 Landwirtschaft ist der Strukturwandel sehr langsam, aufgrund der langen Investitionszyklen
@@ -67,20 +80,21 @@ Druck auf die Produzenten
 		Skaleneffekte nutzen, durchschnittliche Stückkosten senken (Spezialisierung bzw. Vergrößerung der Betriebe) und dadurch einen wirtschaftlichen Vorteil ggü anderen Betrieben erhalten.
 	\item{technischer Fortschritt (auch biologisch, chemisch und organisatorischer)}
 
-		Möglichkeit der Produkivitätssteigerung durch Mechanisierung, Verbesserung der Sorten (Zucht), wirksame \ac{PSM} oder bessere Organisierung der Arbeitsabläufe (genauere Wettervorhersagen, vereinfachte Kommunikation).
+		Mög\-lich\-keit der Pro\-duk\-tivi\-täts\-stei\-ger\-ung, zB. durch Mechanisierung, Verbesserung der Sorten (Zucht), wirksame \ac{PSM} oder bessere Organisierung der Arbeitsabläufe (genauere Wettervorhersagen, vereinfachte Kommunikation).
 		Dadurch erhöhen sich die Produktionsmengen und die Preise fallen (Marktdiagramm).
 		Durch eine gesteigerte Nachfrage, kann der Effekt der fallenden Preise ausgeglichen werden, bzw verringert werden.
-		In der landwirtschaftlichen Primärproduktion ist eine lokale Steigerung der Nachfrage häufig nur über Bevölkerungswachstum zu realisieren.
+		In der landwirtschaftlichen Pri\-mär\-pro\-duk\-tion ist eine lokale Steigerung der Nachfrage häu\-fig nur über Be\-völ\-ker\-ungs\-wachs\-tum zu realisieren.
 	\item{Außerlandwirtschaftliche Beschäftigungsmöglichkeiten}
 
 		Abwanderung von Arbeitskräften, Notwendigkeit der Produktivitätssteigerung des Produktionsfaktors Mensch.
 	\item{ungesicherte Hofnachfolge}
 
-		Familienbetriebe geben bei fehlendem Nachfolger in der Regel auf. Bei nicht vom Inhaber geführten Betrieben (Genossenschaften, AGs\ldots) wird ein neuer Verwalter, Betriebsleiter, Geschäftsführer\ldots eingestellt.
+		Familienbetriebe (Von Inhaber geführte Betriebe) geben bei fehlendem Nachfolger (eigenes Kind) in der Regel auf (Beim Verkauf werden die Flächen in der Regel von anderen Betrieben gekauft und nicht von neuen Betrieben gekauft).
+		Bei nicht vom Inhaber geführten Betrieben (Genossenschaften, AGs\ldots) wird ein neuer Verwalter, Betriebsleiter, Geschäftsführer\ldots von den Eigentümer eingestellt.
 	\item{internationaler Wettbewerb}
 
 		Produkte werden auf dem Weltmarkt gehandelt und beeinflussen daher die lokalen Preise.
-		In den meisten Fällen ist in einer Region die Produktion günstiger, sodass der Weltmarktpreis unter dem lokalen Preisgleichgewicht liegt.
+		In den meisten Fäl\-len ist in einer Region die Produktion gün\-sti\.ger, sodass der Weltmarktpreis unter dem lokalen Preisgleichgewicht liegt.
 		Sollte der Weltmarktpreis den lokalen Preis (deutlich) anheben, werden sich die Produktionsfaktoren verteuern (idR das knappste, derzeit Boden), da selbst mit einem höherem Faktorpreis ein Gewinn erzielt werden kann. 
 
 		Aktuell (Herbst 2021) liegen die Weltmarktpreise für Getriede deutlich höher als die Produktionskosten.
